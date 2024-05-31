@@ -29,18 +29,18 @@ class ItemAdapter(private val context: Context, private val items: List<Item>) :
         fun bind(item: Item) {
             itemName.text = item.name
             itemView.setOnClickListener {
-                if (item.type is String) {
-                    // Переход к деталям, если type - String
+                if (item.details is String) {
+                    // Переход к деталям, если details - String
                     val intent = Intent(context, DetailActivity::class.java).apply {
                         putExtra("name", item.name)
-                        putExtra("type", item.type as String)
+                        putExtra("type", item.details as String)
                     }
                     context.startActivity(intent)
-                } else if (item.type is List<*>) {
-                    // Переход к новому списку, если type - List<SubItem>
+                } else if (item.details is List<*>) {
+                    // Переход к новому списку, если details - List<SubItem>
                     val intent = Intent(context, SubItemListActivity::class.java).apply {
                         putExtra("name", item.name)
-                        putParcelableArrayListExtra("subItems", item.type as ArrayList<SubItem>)
+                        putParcelableArrayListExtra("subItems", item.details as ArrayList<SubItem>)
                     }
                     context.startActivity(intent)
                 }

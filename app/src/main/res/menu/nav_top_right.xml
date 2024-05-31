@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:popupTheme="@style/AppTheme.PopupMenu">
+    <item android:id="@+id/nav_top_body"
+        android:icon="@drawable/on"
+        android:title="Настройки"/>
+    <item android:id="@+id/nav_top_engine"
+        android:icon="@drawable/on"
+        android:title="Подробнее"/>
+
+</menu>

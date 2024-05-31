@@ -1,28 +1,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/item_bcg"
     android:orientation="vertical"
-    android:layout_margin="3dp"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:radius="10dp">
+
+    <ImageView
+        android:id="@+id/subItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:id="@+id/subItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Название"
-        android:textSize="24sp"/>
+        android:text="Текст"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/subItemArticul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Артикул"
-        android:textSize="18sp"/>
-
-    <TextView
-        android:id="@+id/subItemImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Фото"
-        android:textSize="20sp"/>
+        android:text="Текст"
+        android:textSize="18sp" />
 </LinearLayout>

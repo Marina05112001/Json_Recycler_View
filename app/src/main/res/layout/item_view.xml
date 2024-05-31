@@ -2,7 +2,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="3dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/item_bcg"
+    android:radius="10dp">
 
     <TextView
         android:id="@+id/itemName"
@@ -11,5 +13,5 @@
         android:layout_margin="7dp"
         android:text="Текст"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 </LinearLayout>

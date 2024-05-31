@@ -1,40 +1,32 @@
 [
     {
-        "name": "Электрооборудование",
-        "type": "door"
-    },
-    {
-        "name": "Диски",
-        "type": "disk1"
-    },
-    {
-        "name": "Двигатель",
-        "type": "klapan"
-    },
-    {
-        "name": "Трансмиссия",
-        "type": "bamper"
-    },
-    {
         "name": "Кузов",
-        "type": [
+        "details": [
             {
-                "type":
+                "details":
                 {
                     "name": "Передняя часть",
                     "articul": "214243425",
-                    "image": "adsa"
+                    "image": "logo"
                 }
             },
             {
-                "type":
+                "details":
                 {
                     "name": "Задняя часть",
                     "articul": "214243425",
-                    "image": "adsa"
+                    "image": "logo"
                 }
             }
 
         ]
+    },
+    {
+        "name": "Двигатель",
+        "details": "ГБЦ"
+    },
+    {
+        "name": "Трансмиссия",
+        "details": "Кардан"
     }
 ]
